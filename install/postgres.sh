@@ -20,7 +20,7 @@ if [ ! -d /mnt/postgresql ] ; then
 fi
 
 # trust local postgres connections
-sudo cp etc/pg_hba.conf /mnt/postgresql/main/pg_hba.conf
+sudo cp etc/pg_hba.conf /etc/postgresql/${POSTGRES_VERSION}/main/pg_hba.conf
 
 # restart postgres
 sudo /etc/init.d/postgresql restart
