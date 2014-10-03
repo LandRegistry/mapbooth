@@ -5,4 +5,4 @@
 
 ./install/tilemill.sh
 ./install/postgres.sh
-./install/osmdata.sh
+./install/imposm.sh
