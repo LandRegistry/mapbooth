@@ -35,5 +35,6 @@ sudo /etc/init.d/postgresql restart
 
 # create database
 psql -U postgres -c "create database osm;"
+psql -U postgres -d osm -c "ALTER USER osm WITH PASSWORD 'osm';"
 psql -U postgres -d osm -f /usr/share/postgresql/${POSTGRES_VERSION}/contrib/postgis-${POSTGIS_VERSION}/postgis.sql
 psql -U postgres -d osm -f /usr/share/postgresql/${POSTGRES_VERSION}/contrib/postgis-${POSTGIS_VERSION}/spatial_ref_sys.sql
