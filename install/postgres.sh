@@ -15,9 +15,8 @@ sudo apt-get install -y postgresql-${POSTGRES_VERSION}-postgis-${POSTGIS_VERSION
 
 # move database to /mnt
 if [ ! -d /mnt/postgresql ] ; then
-    sudo cp -aRv /etc/postgresql/${POSTGRES_VERSION} /mnt/postgresql
-    sudo rm -rf /etc/postgresql/${POSTGRES_VERSION}
-    sudo ln -s /etc/postgresql/${POSTGRES_VERSION} /mnt/postgresql
+    sudo mv /var/lib/postgresql/${POSTGRES_VERSION} /mnt/postgresql
+    sudo ln -s /mnt/postgresql /var/lib/postgresql/${POSTGRES_VERSION}
 fi
 
 # trust local postgres connections
