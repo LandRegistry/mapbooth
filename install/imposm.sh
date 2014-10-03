@@ -29,10 +29,10 @@ sudo pip install imposm
 wget -N http://download.geofabrik.de$PBF_DIR/$PBF
 
 wget -N http://data.openstreetmapdata.com/simplified-land-polygons-complete-3857.zip
-unzip simplified-land-polygons-complete-3857.zip
+unzip -f -o simplified-land-polygons-complete-3857.zip
 
 wget -N http://data.openstreetmapdata.com/land-polygons-split-3857.zip
-unzip land-polygons-split-3857.zip
+unzip -f -o land-polygons-split-3857.zip
 
 # install OSM Bright map style
 git clone https://github.com/mapbox/osm-bright.git
