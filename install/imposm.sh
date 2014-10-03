@@ -35,7 +35,14 @@ wget -N http://data.openstreetmapdata.com/land-polygons-split-3857.zip
 unzip -f -o land-polygons-split-3857.zip
 
 # install OSM Bright map style
-git clone https://github.com/mapbox/osm-bright.git
+if [ ! -d osm-bright ] ; then
+    git clone https://github.com/mapbox/osm-bright.git
+else
+    (
+        cd osm-bright
+        git pull --rebase
+    )
+fi
 
 # import data into postgres
 imposm -U postgres -d osm -m osm-bright/imposm-mapping.py \
