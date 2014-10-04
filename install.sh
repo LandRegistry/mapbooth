@@ -5,4 +5,4 @@
 
 ./install/tilemill.sh
 ./install/postgres.sh
-./install/imposm.sh
+./install/osm-bright.sh
