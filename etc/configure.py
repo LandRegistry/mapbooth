@@ -37,5 +37,5 @@ config["postgis"]["extent"] = ""
 # These OSM land shapefiles are updated daily and can be downloaded at: 
 # - http://data.openstreetmapdata.com/simplified-land-polygons-complete-3857.zip
 # - http://data.openstreetmapdata.com/land-polygons-split-3857.zip
-config["land-high"] = path.join(getcwd(),"../land-polygons-split-3857/land_polygons.shp")
-config["land-low"] = path.join(getcwd(),"../simplified-land-polygons-complete-3857/simplified_land_polygons.shp")
+config["land-high"] = path.join(getcwd(),"land-polygons-split-3857/land_polygons.shp")
+config["land-low"] = path.join(getcwd(),"simplified-land-polygons-complete-3857/simplified_land_polygons.shp")
