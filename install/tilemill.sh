@@ -10,6 +10,8 @@ sudo apt-get install -y tilemill libmapnik nodejs
 
 # files: /usr/share/tilemill
 # config: /etc/tilemill/tilemill.config
+sudo cp etc/tilemill.config /etc/tilemill/tilemill.config
+
 # logs: /var/log/tilemill
 # run as tilemill user using upstart:
-sudo start tilemill
+sudo restart tilemill
