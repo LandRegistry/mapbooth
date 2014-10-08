@@ -1,4 +1,5 @@
 .DS_Store
 tmp
 *.osm.pbf
+*.cache
 osm-bright/
